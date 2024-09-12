@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<title>Practice</title>  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="styles.css" rel="stylesheet">
+
+<!-- fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ 
+  <nav id="navbar">
+
+    <a href="#">
+      <img id="brand_logo"  src="https://www.svgrepo.com/show/533810/chef-man-cap.svg" alt="logo"/>
+    </a>
+
+    <a class="brand_name" href="#">
+      <h1 id="brand_title" class="title">Foodies Delight</h1>
+    </a>
+
+    <div id="menu_bar" class="menu" onclick="myFunction(this); openNav()">
+      <div id="bar1a" class="bar1"></div>
+      <div id="bar2a" class="bar2"></div>
+      <div id="bar3a" class="bar3"></div>
+    </div>
+
+  </nav>
+
+  <!-- sidenav -->
+
+  <div id="mySidenav" class="sidenav">
+
+    <a href="javascript:void(0)" 
+    class="closebtn" 
+    onclick="closeNav()">&times;
+    </a>
+
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Gallery</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+
+  </div>
+  <!-- end sidenav -->
+
+  <main>
+
+    <section>
+      <div class="display_image_container">
+        <div class="display_image"></div>
+      </div>
+    </section>
+
+    <section class="intro_section">
+
+      <h1>Automotive Cust</h1>
+
+      <p>Ace Customs is a premium custom car shop specialising in turn-key automotive restoration, restomod and customisation projects. From first engagement to the final reveal, undertaking a custom car project with Ace Customs is both an experience and a journey. Ace Customs will be your single poin. toration, restomod and customisation projects. From first engagement to the final reveal, undertaking a custom car project with Ace Customs is both an ex
+      </p>
+
+      <p>Ace Customs is a premium custom car shop specialising in turn-key automotive restoration, restomod and customisation projects. From first engagement to the final reveal, undertaking a custom car project with Ace Customs is both an experience and a journey. Ace Customs will be your single poin. toration, restomod and customisation projects. From first engagement to the final reveal, undertaking a custom car project with Ace Customs is both an ex
+      </p>
+
+      <a href="#">
+          <button class="read_more">Contact us today</button>
+        </a>
+    </section>
+
+    <section class="gallery_section">
+
+      <div class="tagline_container">
+        <div class="tagline_border">
+          <p class="tagline">Gallery</p>
+        </div>
+      </div>
+
+      <div class="scroll_container">
+
+        <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=400" alt="image 1"/>
+
+        <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=400" alt="image 2"/>
+
+        <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400" alt="image 3"/>
+
+        <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=400" alt="image 4"/>
+      </div>
+
+    </section>
+
+    <section class="contact_section">
+
+      <div class="tagline_container">
+        <div class="tagline_border">
+          <p class="tagline">Dine with us</p>
+        </div>
+      </div>
+
+      <div class="">
+        <h2>Let's build something awesome</h2>
+
+        <a href="#">
+          <button class="contact_btn">Contact us today</button>
+        </a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- end of main-->
+  <footer>
+    
+    <div class="contact_footer">
+
+      <div class="contact_details">
+        
+        <a href="#">info@gmail.com</a>
+        <a href="#">+27 (0) 10 *** ***1</a>
+
+      </div>
+      
+      <div>
+      <img src="https://www.svgrepo.com/show/533810/chef-man-cap.svg" class="logo_footer" alt="logo"/>
+      </div>
+
+    </div>
+
+    <div class="legal_footer">
+      <p>© 2024 A### ####S. ALL RIGHTS Reserved. Privacy Policy.</p>
+
+      <a href="">Website by Steez.</a>
+    </div>
+
+  </footer>
+
+<script>
+  /* Sidenav code*/
+  function myFunction(x) {
+    x.classList.toggle("change");
+  }
+
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "350px";
+}
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0px";
+    document.querySelector('.menu').classList.remove('change');
+  }
+
+  /*Navbar scroll code */
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.getElementById("navbar").style.height = "70px";
+      document.getElementById("navbar").style.backgroundColor = "#2E8B57";
+      document.getElementById("navbar").style.borderBottom = "3px solid black";
+
+       // Adjust logo height and padding on scroll
+      document.getElementById("brand_logo").style.height = "40px";
+
+      document.getElementById("brand_title").style.fontSize = "28px";
+      document.getElementById("brand_title").style.color = "black";
+
+      // Adjust menu bar color
+      document.getElementById("bar1a").style.backgroundColor = "black";
+      document.getElementById("bar2a").style.backgroundColor = "black";
+      document.getElementById("bar3a").style.backgroundColor = "black";
+
+    } else {
+     document.getElementById("navbar").style.height = "100px";
+     document.getElementById("navbar").style.backgroundColor = "transparent";
+     document.getElementById("navbar").style.borderBottom = "0px";
+     document.getElementById("navbar").style.padding = "0px 0px";
+
+     // Restore original logo size and padding
+     document.getElementById("brand_logo").style.height = "80px";
+     //document.getElementById("brand_logo").style.width = "80px";
+     document.getElementById("brand_logo").style.padding = "0";
+
+     document.getElementById("brand_title").style.fontSize= "48px";
+     document.getElementById("brand_title").style.color = "white";
+
+     document.getElementById("bar1a").style.backgroundColor = "white";
+     document.getElementById("bar2a").style.backgroundColor = "white";
+     document.getElementById("bar3a").style.backgroundColor = "white";
+    }
+  }
+</script>
+
+</body>
+</html>
