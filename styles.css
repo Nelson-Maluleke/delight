@@ -28,7 +28,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('
   background-position: center;
   background-attachment: fixed;
   aspect-ratio: 3 / 2;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
 }
 
@@ -75,7 +75,7 @@ nav .brand_name {
   background-color: white;
   width: 35px;
   height: 5px;
-  margin: 6px 0px;
+  margin: 6px 6px;
   cursor: pointer;
 }
 
