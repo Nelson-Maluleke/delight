@@ -11,20 +11,25 @@ body {
  box-sizing: border-box;
 }
 
+/*Hero*/
+
+.hero {
+  background-color: #D3D3D3;
+}
+
 .display_image_container {
-  height: 100%;
-  margin: 0px 30px 40px 30px;
+  padding: 0px 10px 40px 10px;
 }
 
 .display_image {
-  background-image: url('https://images.pexels.com/photos/784633/pexels-photo-784633.jpeg?auto=compress&cs=tinysrgb&w=400');
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1716043145345-42fb93f7c20a?q=80&w=1281&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  aspect-ratio: 3 / 2;
   height: 80vh;
   width: 100%;
-  overflow: hidden; /* Prevent overflow */
 }
 
 html, body {
@@ -70,8 +75,7 @@ nav .brand_name {
   background-color: white;
   width: 35px;
   height: 5px;
-  margin: 6px 6px;
-  transition: 0.4s;
+  margin: 6px 0px;
   cursor: pointer;
 }
 
@@ -85,11 +89,6 @@ nav .brand_name {
 
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
-}
-
-.menu:hover {
-  background-color: #aaa;
-  transition: 0.4s;
 }
 
 .sidenav {
@@ -133,7 +132,7 @@ section {
 .intro_section {
   background-color: #2E8B57;
   text-align: center;
-  padding: 30px 150px;/**/
+  padding: 30px 75px;/**/
 }
 
 section h1 {
