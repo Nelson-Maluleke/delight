@@ -1,1 +1,1 @@
-https://nelson-maluleke.github.io/delight/main.html
+https://nelson-maluleke.github.io/delight/index.html
